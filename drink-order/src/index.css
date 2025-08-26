@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #e2e8f0; /* Tailwind gray-200 */
+  border-radius: 4px;
+}
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* Tailwind blue-600 */
+  border-radius: 4px;
+}
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* Tailwind blue-600 hover */
+}
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.login-form h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.login-form button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.login-form button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.login-form .error {
+  color: #dc2626;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form a {
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .login-form {
+    padding: 24px;
+  }
+  .login-form h2 {
+    font-size: 1.5rem;
+  }
+  .login-form input,
+  .login-form button {
+    font-size: 0.875rem;
+  }
+}
+.admin-tabs {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.admin-tabs button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+@media (min-width: 640px) {
+  .admin-tabs button {
+    font-size: 1rem;
+  }
+}
+
+.admin-filter {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.admin-filter label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.admin-filter input,
+.admin-filter select {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.admin-filter input:focus,
+.admin-filter select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+.admin-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.admin-section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
